@@ -1,6 +1,6 @@
 # Portfolio - Shanice Akinyi Oduor
 
-This is a personal portfolio website for Shanice Akinyi Oduor, a Junior Software Engineer. The website showcases her professional profile, skills, resume, and contact information.
+This is a personal portfolio website for Shanice Akinyi Oduor, a Junior Software Engineer.The website can be viewed by clicking this link https://stalwart-flan-7590e1.netlify.app/ .The website showcases her professional profile, skills, resume, and contact information.
 
 ---
 
