@@ -31,9 +31,16 @@ This portfolio is designed to highlight Shanice's background in software enginee
 ---
 
 ## Features
+## 🌟 Features
 
-- Responsive navigation bar with active section highlighting
-- Interactive and responsive layout using Flexbox and CSS Grid principles
+- **Responsive Design** – Optimized for desktop and mobile devices.
+- **Navigation Menu** – Easy access to different sections (Home, About, Resume, Contact).
+- **About Section** – Brief personal introduction and professional background.
+- **Resume Section** – Education, work experience, technical skills, and hobbies.
+- **Projects Showcase** – Highlighting key software projects I have developed.
+- **Certifications** – List of professional certifications achieved.
+- **Contact Information** – Email, phone, and social media links.
+- **Downloadable Resume** – PDF version of my CV available for download.
 - Consistent color scheme and typography adhering to a clean professional design
 - Social and professional media integration with Font Awesome icons
 - Semantic HTML5 structure for accessibility and SEO
