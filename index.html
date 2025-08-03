@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Shanice Akinyi Oduor">
+
+    <title>PortFolio - Shanice Akinyi Oduor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        /* Navigation Styles */
+        nav {
+            background-color: #001f3f;
+            /* Navy blue */
+            padding: 1rem 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #4a90e2;
+            /* Accent blue */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav li {
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: #4a90e2;
+            /* Accent blue */
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Active state */
+        nav a.active {
+            color: #4a90e2;
+        }
+
+        nav a.active::after {
+            width: 100%;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .logo {
+                margin-bottom: 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            nav a {
+                padding: 0.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+    <nav>
+        <a href="#home" class="logo">Port<span>folio</span></a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section">
+
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2 class="name">Shanice Akinyi Oduor</h2>
+                    <p class="role">I'm a <span class="underlined">Junior Software Engineer</span></p>
+
+                    <p class="description">
+                        I am a passionate junior software engineer with an insatiable curiosity for technology and
+                        problem-solving. 
+                    </p>
+
+
+                    <div class="professional-links">
+                        <a href="https://github.com/Nice254-art" class="prof-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/akinyi-oduor-37a158292/" class="prof-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="image-content">
+                    <div class="profile-image">
+                        <img src="images\campus-maneno.jpg"alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <img src="images\campus-maneno.jpg"alt="">
+                            <div class="status-indicator"></div>
+                        </div>
+                        <h2 class="profile-name">Shanice Akinyi</h2>
+                        <p class="profile-title">Junior Software Developer</p>
+
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>Akinyioduor59@gmail.com/span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+254 704 541 326</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Nairobi, Kenya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-right">
+                    <button class="get-to-know-btn">Get to Know Me</button>
+                    <h1 class="about-title">Passionate About Tech</h1>
+
+                    <p class="about-description">
+                        I am always eager to learn and grow in the ever-evolving tech landscape.
+                    </p>
+
+                    <p class="about-description">
+                        I am a passionate junior software engineer with an insatiable curiosity for technology and
+                        problem-solving.With a strong foundation in mathematics,I thrive on tacklingcomplex algorithms
+                        and optimizing code for efficiency.,
+                        Beyond coding, I maintain a disciplined routine of regular exercise, believing that a healthy
+                        body fuels a sharp mind.
+                        This blend of analytical thinking, technical skills, and personal discipline making me a driven
+                        and well-rounded developer,
+                        ready to take on challenges and contribute innovative solutions to the tech world.
+                    </p>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section">
+            <div class="resume-content">
+                <div class="resume-header">
+                    <h1 class="section-title">Resume</h1>
+                    <p class="section-subtitle">
+                        Driven Information Technology graduate with expertise in mathematics, ICT education, and web
+                        development.
+                        Passionate about leveraging technology to create meaningful solutions and educational
+                        experiences.
+                    </p>
+                </div>
+
+                <div class="resume-main">
+                    <div class="resume-left">
+                        <div class="resume-image">
+                            <img src="images\campus-maneno.jpg"alt="">
+                        </div>
+
+                        <div class="professional-summary">
+                            <h3>Personal Information</h3>
+                            <div class="personal-info">
+                                <p><strong>Name:</strong> Shanice Akinyi Oduor</p>
+                                <p><strong>Place of Birth:</strong> Lang'ata District, Nairobi, Kenya</p>
+                                <p><strong>Nationality:</strong> Kenyan</p>
+                                <p><strong>Gender:</strong> Female</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-information">
+                            <h3>Contact Information</h3>
+                            <div class="contact-details">
+                                <div class="contact-detail">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Nairobi, Kenya</span>
+                                </div>
+                                <div class="contact-detail">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>akinyioduor59@gmail.com</span>
+                                </div>
+                                <div class="contact-detail">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+254 704 541 326</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="technical-skills">
+                            <h3>Technical Skills</h3>
+                            <div class="skills-list">
+                                <div class="skill-category">
+                                    <h4>Programming Languages:</h4>
+                                    <ul>
+                                        <li>C</li>
+                                        <li>PHP</li>
+                                        <li>C#</li>
+                                        <li>C++</li>
+                                        <li>Java</li>
+                                        <li>Python</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hobbies-interests">
+                            <h3>Hobbies & Interests</h3>
+                            <ul class="hobbies-list">
+                                <li><i class="fas fa-utensils"></i> Cooking</li>
+                                <li><i class="fas fa-book"></i> Reading</li>
+                                <li><i class="fas fa-running"></i> Running</li>
+                                <li><i class="fas fa-plane"></i> Traveling</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-right">
+                        <div class="experience-section">
+                            <h3><i class="fas fa-briefcase"></i> Employment History</h3>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Math and ICT Teacher</h4>
+                                    <span class="timeline-date">Sep 2024 – Feb 2025</span>
+                                    <div class="company">
+                                        <i class="fas fa-building"></i>
+                                        <span>The Scholar Educational Center, Nairobi</span>
+                                    </div>
+                                    <ul>
+                                        <li>Teaching year 11 and year 10 math and ICT</li>
+                                        <li>Making the timetable and any other IT issue</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Polling Clerk</h4>
+                                    <span class="timeline-date">Aug 2022</span>
+                                    <div class="company">
+                                        <i class="fas fa-building"></i>
+                                        <span>IEBC, Homabay</span>
+                                    </div>
+                                    <ul>
+                                        <li>Confirming that the voter is registered</li>
+                                        <li>Giving the voters ballot papers</li>
+                                        <li>Counting the votes and recording</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education-section">
+                            <h3><i class="fas fa-graduation-cap"></i> Educational Background</h3>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Bachelor's Degree in Information Technology</h4>
+                                    <span class="timeline-date">Sep 2019 – Aug 2024</span>
+                                    <div class="company">
+                                        <i class="fas fa-university"></i>
+                                        <span>Taita Taveta University, Voi Town</span>
+                                    </div>
+                                    <p>Achieved Second Class Upper Division</p>
+                                    <p>Completed a research project titled "Small Scale Farming" in collaboration with 5
+                                        students and 2 professors</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Kenya Certificate of Secondary Education</h4>
+                                    <span class="timeline-date">Feb 2015 – Nov 2018</span>
+                                    <div class="company">
+                                        <i class="fas fa-school"></i>
+                                        <span>Huruma Girls High School, Nairobi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certifications-section">
+                            <h3><i class="fas fa-certificate"></i> Certifications</h3>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Introduction to Cyber Security</h4>
+                                    <span class="timeline-date">March 2025</span>
+                                    <div class="company">
+                                        <i class="fas fa-certificate"></i>
+                                        <span>Cisco Networking Academy</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Web Development (Django Framework)</h4>
+                                    <span class="timeline-date">September 2023</span>
+                                    <div class="company">
+                                        <i class="fas fa-certificate"></i>
+                                        <span>Emobilis Technology Institute</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-content">
+                <div class="contact-header">
+                    <h1 class="section-title">Contact</h1>
+                    <p class="section-subtitle">
+                        Get in touch with me for any inquiries, collaborations, or opportunities. I'm always open to
+                        discussing new projects and ideas.
+                    </p>
+                </div>
+
+                <div class="contact-main">
+                    <div class="contact-left">
+                        <div class="contact-info-card">
+                            <h3>Contact Info</h3>
+                            <p>Feel free to reach out to me through any of the following channels. I'll get back to you
+                                as soon as possible.</p>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>My Location</h4>
+                                    <p>Nairobi, Kenya</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Phone Number</h4>
+                                    <p>+254 704 541 326</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Email Address</h4>
+                                    <p>akinyioduor59@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="portfolio-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2023 Shanice Akinyi Oduor. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://github.com/Nice254-art" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/akinyi-oduor-37a158292/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/Akinyi13Oduor" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
